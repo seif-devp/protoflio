@@ -19,23 +19,26 @@
     --bg-card-hover: rgba(31, 41, 55, 0.85);
     --border-color: rgba(255, 255, 255, 0.08);
     --border-highlight: rgba(56, 189, 248, 0.3);
-    
+
     --text-main: #F9FAFB;
     --text-muted: #9CA3AF;
     --text-dim: #6B7280;
 
     /* Accent & Brand Colors */
-    --primary: #38BDF8;      /* Flutter Cyan */
+    --primary: #38BDF8;
+    /* Flutter Cyan */
     --primary-glow: rgba(56, 189, 248, 0.25);
-    --secondary: #6366F1;    /* Indigo */
+    --secondary: #6366F1;
+    /* Indigo */
     --secondary-glow: rgba(99, 102, 241, 0.25);
-    --accent: #10B981;       /* Emerald */
+    --accent: #10B981;
+    /* Emerald */
 
     /* Gradients */
     --grad-primary: linear-gradient(135deg, #38BDF8 0%, #6366F1 100%);
     --grad-text: linear-gradient(135deg, #38BDF8 0%, #818CF8 50%, #C084FC 100%);
     --grad-card: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
-    
+
     /* Shadows & Effects */
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
@@ -172,7 +175,7 @@ body {
 
 [data-theme="light"] .btn--secondary {
     background: #FFFFFF;
-    border: 1px solid rgba(0,0,0,0.12);
+    border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .btn--secondary:hover {
@@ -389,9 +392,17 @@ body {
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
 }
 
 .hero__title {
@@ -417,7 +428,9 @@ body {
 }
 
 @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+        border-color: transparent;
+    }
 }
 
 .hero__tagline {
@@ -502,9 +515,18 @@ body {
     height: 10px;
     border-radius: 50%;
 }
-.dot.red { background: #FF5F56; }
-.dot.yellow { background: #FFBD2E; }
-.dot.green { background: #27C93F; }
+
+.dot.red {
+    background: #FF5F56;
+}
+
+.dot.yellow {
+    background: #FFBD2E;
+}
+
+.dot.green {
+    background: #27C93F;
+}
 
 .code-title {
     margin-left: 10px;
@@ -522,11 +544,25 @@ body {
 }
 
 /* Code highlight tokens */
-.kwd { color: #FF7B72; }
-.cls { color: #FFA657; }
-.type { color: #79C0FF; }
-.str { color: #A5D6FF; }
-.func { color: #D2A8FF; }
+.kwd {
+    color: #FF7B72;
+}
+
+.cls {
+    color: #FFA657;
+}
+
+.type {
+    color: #79C0FF;
+}
+
+.str {
+    color: #A5D6FF;
+}
+
+.func {
+    color: #D2A8FF;
+}
 
 .floating-stat {
     position: absolute;
@@ -683,6 +719,7 @@ body {
 .edu-institution {
     color: var(--primary);
     font-weight: 600;
+}
 
 .edu-date {
     font-size: 0.85rem;
@@ -752,10 +789,15 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .skill-card {
     padding: 1.75rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .skill-card__header {
@@ -1005,11 +1047,13 @@ body {
     gap: 2rem;
 }
 
-.contact__info, .contact__form {
+.contact__info,
+.contact__form {
     padding: 2.5rem;
 }
 
-.contact__info h3, .contact__form h3 {
+.contact__info h3,
+.contact__form h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
@@ -1273,7 +1317,9 @@ body {
         text-align: center;
     }
 
-    .hero__tagline, .hero__meta, .hero__cta {
+    .hero__tagline,
+    .hero__meta,
+    .hero__cta {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
